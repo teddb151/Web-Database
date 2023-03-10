@@ -1,0 +1,23 @@
+<div>
+    <h1>List parcels</h1>
+    <table>
+      <thead>
+        <th>#</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Weight</th>
+        <th>Fragile?</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let parcel of parcels; let i = index">
+          <td>{{i + 1}}</td>
+          <td>{{parcel._id}}</td>
+          <td>{{parcel.name}}</td>
+          <td>{{parcel.address}}</td>
+          <td>{{parcel.weight}}</td>
+          <td>{{parcel.fragile}}</td>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,12 @@
+<div>
+    <h1>Add Parcel to Sender</h1>
+    Sender ID <input type="text" name="senderName" [(ngModel)]="senderName" />
+    Address <input type="text" name="address" [(ngModel)]="address" />
+    Weight <input type="text" name="weight" [(ngModel)]="weight" />
+    <label>Fragile</label>
+    <select name="fragile" [(ngModel)]="fragile">
+      <option value="true">True</option>
+      <option value="false">False</option>
+    </select>
+    <button (click)="addParcelToSender()">Submit</button>
+  </div>
